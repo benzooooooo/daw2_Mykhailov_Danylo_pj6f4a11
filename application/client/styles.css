@@ -1,0 +1,187 @@
+/* Styles of all the pages of ToyOrders */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe8d6, #d6ecff);
+    color: #333;
+    margin: 0;
+    padding: 40px 15px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* White box in the center of the page */
+.card {
+    background-color: white;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card.wide {
+    max-width: 1000px;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    width: 110px;
+}
+
+h1 {
+    color: #e2574c;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    color: #3a7bd5;
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+p, li {
+    line-height: 1.5;
+}
+
+/* Forms */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3a7bd5;
+}
+
+/* Products of the new order */
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f9fc;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.product label {
+    display: inline;
+    font-weight: normal;
+    margin: 0;
+}
+
+.product input[type="number"] {
+    width: 70px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.product input[type="number"]:disabled {
+    background-color: #eee;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+button,
+.button {
+    display: inline-block;
+    background-color: #3a7bd5;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+    background-color: #2a5fa8;
+}
+
+button.secondary,
+.button.secondary {
+    background-color: #888;
+}
+
+button.secondary:hover,
+.button.secondary:hover {
+    background-color: #666;
+}
+
+/* Tables of the orders */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #3a7bd5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+/* Messages */
+.message,
+.error {
+    color: #e2574c;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result {
+    background-color: #e3f6e8;
+    color: #2e7d46;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result:empty {
+    display: none;
+}
+
+.note {
+    color: #888;
+    font-size: 13px;
+}
