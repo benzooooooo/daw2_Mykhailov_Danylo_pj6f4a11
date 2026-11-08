@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToyOrders - View one order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1>View one order</h1>
+
+        <form action="../server/viewOneOrder.php" method="get">
+            <label for="id">Order ID</label>
+            <input type="text" id="id" name="id" required>
+            <div class="buttons">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="secondary" onclick="goTo('index.html')">Back to home</button>
+            <button onclick="goTo('menu.html')">Back to operations menu</button>
+            <button onclick="goTo('viewOrders.html')">Back to view orders menu</button>
+        </div>
+    </div>
+</body>
+</html>
